@@ -1,0 +1,77 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/src/config/config.js
+# production
+ 
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------file config.js-------------
+# const config = {
+#   rootLink: "https://apps.omegatheme.com/cookies-notification",
+#   pathName: "/cookies-notification/admin/build",
+#   shop: window.location.href.split("?shop=")[1],
+#   appName: "Cookies Notification",
+# };
+
+# export default config;
+
+
+# ---------------file conn-shopify.php---------
+# <?php
+# $apiKey = "e1b619306407b8a0e9eb54bd23aa3732";
+# $appId = "8";
+# $rootLink = "https://apps.omegatheme.com/cookies-notification";
+# $trialTime = 30;
+# $chargeType = "monthly";
+# $price = 7.99;
+# $version = time();
+# //true or null
+# $appName = "Holiday effects";
+# $testMode = "true";
+# $dateUse  = '2019-02-15 04:03:09';
+# $chargeTitle = "app cookies";
+# $host = "localhost";
+
+# $username = "shopify_huy";
+# $password = "Be03ySNJZ1dAJdvX";
+# $database = "shopify_huy";
+# $testMode = "true";
+# $appName = "EU GDPR Cookies Notification";
+# $linkApp = 'https://apps.shopify.com/eu-cookies-notification?reveal_new_review=true';
+# $chargeTitle = "EU GDPR Cookies Notification by Omega Monthly charge";
+
+
+# $dbr = new Mysqli($host, $username, $password, $database);
+# if ($dbr->connect_errno) {
+#     die('Connect Error: ' . $dbr->connect_errno);
+# }
+# $dbw = new Mysqli($host, $username, $password, $database);
+# if ($dbw->connect_errno) {
+#     die('Connect Error: ' . $dbw->connect_errno);
+# }
+# $dbr->query("set names 'utf8mb4'");
+# $dbw->query("set names 'utf8mb4'");
+# if (!defined("APP_PATH")) {
+#     define("APP_PATH", dirname(__FILE__));
+# }
+# if (!defined("APIVERSION")) {
+#     define("APIVERSION", "/admin/api/2021-01/");
+# }
+# $cookies_notification_list_cookies = "cookies_notification_list_cookies";

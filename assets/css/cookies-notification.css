@@ -1,0 +1,232 @@
+.otCookiesNotification #cookies-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 1em 1.8em;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: Helvetica, Calibri, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5em;
+  z-index: 9999;
+  border-radius: 5px;
+}
+.otCookiesNotification #cookies-message {
+  margin-bottom: 15px;
+}
+
+.otCookiesNotification #cookies-submit > a {
+  cursor: pointer;
+  touch-action: manipulation;
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-size: 0.9em;
+  font-weight: 700;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 140px;
+  margin-top: 5px;
+}
+.otCookiesNotification #cookies-dismiss > a {
+  cursor: pointer;
+  touch-action: manipulation;
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-size: 0.9em;
+  font-weight: 700;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 140px;
+  margin-top: 5px;
+}
+.otCookiesNotification #cookies-prefrences > a {
+  cursor: pointer;
+  touch-action: manipulation;
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-size: 0.9em;
+  font-weight: 700;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 140px;
+  margin-top: 5px;
+}
+
+.otCookiesNotification #cookies-more-info {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.otCookiesNotification #cookies-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.otCookiesNotification #cookies-popup {
+  z-index: 99999999999999999;
+  display: none;
+  border-radius: 30px;
+  width: auto;
+  max-width: 700px;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  animation-name: example;
+  animation-duration: 1.25s;
+  min-width: 35%;
+  min-height: 35%;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  padding: 40px;
+}
+@keyframes example {
+  from {
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.otCookiesNotification .title_cookies {
+  font-weight: bold;
+}
+.otCookiesNotification #cookies-body {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.otCookiesNotification #cookies-action {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.otCookiesNotification .cookies-icon:hover {
+  cursor: pointer;
+}
+
+.otCookiesNotification .cookies-showmore {
+  display: none;
+}
+
+.otCookiesNotification #cookies-body::-webkit-scrollbar {
+  display: none;
+}
+
+.otCookiesNotification button {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .otCookiesNotification #cookies-wrapper {
+    text-align: left;
+    display: flex;
+  }
+  .otCookiesNotification #cookies-popup-bottom {
+    display: block;
+  }
+
+  .otCookiesNotification #cookies-body {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .otCookiesNotification #cookies-message {
+    -ms-flex: 1;
+    flex: 1;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    margin-bottom: 0;
+  }
+  .otCookiesNotification #cookies-submit {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+  }
+  .otCookiesNotification #cookies-submit > a {
+    -ms-flex: 1;
+    flex: 1;
+    margin-top: 0;
+    display: block;
+  }
+  .otCookiesNotification #cookies-dismiss {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    padding-right: 5px;
+  }
+  .otCookiesNotification #cookies-dismiss > a {
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    margin-top: 0;
+  }
+  .otCookiesNotification #cookies-prefrences {
+    display: flex;
+    align-items: center;
+  }
+  .otCookiesNotification #cookies-prefrences > a {
+    margin-right: 0px;
+    margin-top: 0;
+    margin-right: 5px;
+  }
+  .otCookiesNotification #logo-cookie {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .otCookiesNotification #cookies-popup {
+    width: 95%;
+  }
+  .otCookiesNotification #cookies-action {
+    display: flex;
+  }
+  .otCookiesNotification .cookies-btn-select {
+    width: 50%;
+  }
+  .otCookiesNotification .cookies-btn-select > button {
+    min-width: 100px;
+  }
+  .otCookiesNotification .cookies-btn-all > button {
+    min-width: 150px;
+  }
+
+  .otCookiesNotification #cookies-title {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .otCookiesNotification .cookies-btn-select > button {
+    min-width: 120px;
+  }
+  .otCookiesNotification .cookies-btn-select > button {
+    font-size: 12px;
+  }
+}
+/* @media only screen and (max-width: 800px) {
+  #cookies-prefrences > a {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+} */

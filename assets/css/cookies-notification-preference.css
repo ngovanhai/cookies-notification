@@ -1,0 +1,243 @@
+.otCookiesNotification #cookies-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.otCookiesNotification #cookies-popup {
+  z-index: 999;
+  display: none;
+  border-radius: 30px;
+  width: auto;
+  max-width: 700px;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  animation-name: example;
+  animation-duration: 1.25s;
+  min-width: 35%;
+  min-height: 35%;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  padding: 40px;
+}
+@keyframes example {
+  from {
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.otCookiesNotification .title_cookies {
+  font-weight: bold;
+}
+.otCookiesNotification #cookies-body {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.otCookiesNotification #cookies-action {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.otCookiesNotification .cookies-icon:hover {
+  cursor: pointer;
+}
+.otCookiesNotification .fa-chevron-up {
+  display: none;
+}
+.otCookiesNotification .cookies-showmore {
+  display: none;
+}
+
+.otCookiesNotification #cookies-body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .otCookiesNotification #cookies-body {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  .otCookiesNotification #logo-cookie {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .otCookiesNotification #cookies-popup {
+    width: 95%;
+  }
+  .otCookiesNotification #cookies-action {
+    display: flex;
+  }
+  .otCookiesNotification .cookies-btn-select {
+    width: 50%;
+  }
+  .otCookiesNotification .cookies-btn-select > button {
+    min-width: 100px;
+  }
+  .otCookiesNotification .cookies-btn-all > button {
+    min-width: 150px;
+  }
+  .otCookiesNotification #cookies-title {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .otCookiesNotification .cookies-btn-select > button {
+    min-width: 120px;
+  }
+  .otCookiesNotification .cookies-btn-select > button {
+    font-size: 12px;
+  }
+}
+
+.otCookiesNotification .cookies-btn {
+  margin-right: 10px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(238 238 239);
+  border-top-color: rgb(238 238 239);
+  border-bottom-color: rgb(238 238 239);
+}
+.otCookiesNotification .cookies-btn:hover {
+  opacity: 0.8;
+}
+
+.otCookiesNotification .wapperChecked {
+  display: inline-block;
+  position: relative;
+  margin: 3px 0 3px 14px;
+  line-height: 16px;
+  width: 100%;
+}
+
+.otCookiesNotification input[type="checkbox"].inputCheck {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.otCookiesNotification input[type="checkbox"].inputCheck + label {
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 14px;
+  width: auto;
+  display: inline-block;
+  padding: 1px 0 0 17px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-position: left 1px;
+  vertical-align: top;
+  line-height: 16px;
+  font-size: inherit;
+  color: inherit;
+}
+
+.otCookiesNotification .navSelect:hover {
+  background-color: #efefef;
+}
+.otCookiesNotification .navSelect {
+  border-radius: 4px 0 0 4px;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+}
+.otCookiesNotification div#cookies-description-header {
+  padding: 0 0 20px 0;
+}
+
+.otCookiesNotification .cookies-description {
+  margin: 15px;
+}
+
+.otCookiesNotification table.cookies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+.otCookiesNotification .cookies-table th,
+.otCookiesNotification .cookies-table td {
+  padding: 5px;
+  border: 1px solid #dee2e6;
+}
+.otCookiesNotification .cookies-table th {
+  vertical-align: bottom;
+}
+.otCookiesNotification table.cookies-table .thTable {
+  background-color: #f6f6f9;
+}
+.otCookiesNotification .notCookieInTable {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 15px;
+  padding: 5px 0;
+  color: #b9b9b9;
+}
+.otCookiesNotification #opacityBackground {
+  height: 100%;
+  width: 100%;
+  background: #0000008f;
+  position: fixed;
+  top: 0px;
+  opacity: 0.7;
+  left: 0px;
+  z-index: 9;
+}
+.otCookiesNotification .divShow {
+  display: inline-block;
+  width: 90%;
+  cursor: pointer;
+}
+
+.otCookiesNotification .close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.otCookiesNotification .close:hover {
+  opacity: 1;
+}
+.otCookiesNotification .close:before,
+.otCookiesNotification .close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 25px;
+  width: 2px;
+  background-color: #333;
+}
+.otCookiesNotification .close:before {
+  transform: rotate(45deg);
+}
+.otCookiesNotification .close:after {
+  transform: rotate(-45deg);
+}
+
+.otCookiesNotification #logo-cookie {
+  height: 27px;
+  margin-right: 20px;
+}

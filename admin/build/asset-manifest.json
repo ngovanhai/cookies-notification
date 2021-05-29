@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cookies-notification/admin/build/static/css/main.ffc2cde0.chunk.css",
+    "main.js": "/cookies-notification/admin/build/static/js/main.171ffa0d.chunk.js",
+    "main.js.map": "/cookies-notification/admin/build/static/js/main.171ffa0d.chunk.js.map",
+    "runtime-main.js": "/cookies-notification/admin/build/static/js/runtime-main.0c4bd187.js",
+    "runtime-main.js.map": "/cookies-notification/admin/build/static/js/runtime-main.0c4bd187.js.map",
+    "static/css/2.19629625.chunk.css": "/cookies-notification/admin/build/static/css/2.19629625.chunk.css",
+    "static/js/2.e75bd419.chunk.js": "/cookies-notification/admin/build/static/js/2.e75bd419.chunk.js",
+    "static/js/2.e75bd419.chunk.js.map": "/cookies-notification/admin/build/static/js/2.e75bd419.chunk.js.map",
+    "static/js/3.d1e1c7bd.chunk.js": "/cookies-notification/admin/build/static/js/3.d1e1c7bd.chunk.js",
+    "static/js/3.d1e1c7bd.chunk.js.map": "/cookies-notification/admin/build/static/js/3.d1e1c7bd.chunk.js.map",
+    "index.html": "/cookies-notification/admin/build/index.html",
+    "static/css/2.19629625.chunk.css.map": "/cookies-notification/admin/build/static/css/2.19629625.chunk.css.map",
+    "static/css/main.ffc2cde0.chunk.css.map": "/cookies-notification/admin/build/static/css/main.ffc2cde0.chunk.css.map",
+    "static/js/2.e75bd419.chunk.js.LICENSE.txt": "/cookies-notification/admin/build/static/js/2.e75bd419.chunk.js.LICENSE.txt",
+    "static/media/spinner.df1e3eaf.gif": "/cookies-notification/admin/build/static/media/spinner.df1e3eaf.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c4bd187.js",
+    "static/css/2.19629625.chunk.css",
+    "static/js/2.e75bd419.chunk.js",
+    "static/css/main.ffc2cde0.chunk.css",
+    "static/js/main.171ffa0d.chunk.js"
+  ]
+}
